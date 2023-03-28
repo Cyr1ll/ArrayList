@@ -9,20 +9,22 @@ public class Main {
         h.add(5);
         h.add(5);
         h.add(5);
-        h.add(8);
+
         h.add(2);
         h.add(6);
         h.add(5);
         h.add(5);
         h.add(5);
         h.add(5);
+        h.remove(5);
         h.insertFirst(4);
         //h.remove(0);
         h.print();
+        h.remove(0);
 
-        h.Quicksort();
-        //h.selectionsort();
-        //h.bubbleSort();
+        h.QuickSort();
+        //h.SelectionSort();
+        //h.BubbleSort();
         h.print();
 
         MyOrderedArrayImpl b = new MyOrderedArrayImpl(5);

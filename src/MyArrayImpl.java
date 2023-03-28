@@ -26,11 +26,6 @@ public class MyArrayImpl extends  MyBaseArrayImpl {
 
         val[size] =value;
         size++;
-
-        //val[size] =value;
-        //size++;
-        //this.trimToSize();
-
     }
 
     @Override
@@ -80,7 +75,7 @@ public class MyArrayImpl extends  MyBaseArrayImpl {
         val[0]=value;
         size++;
     }
-    public void bubbleSort(){
+    public void BubbleSort(){
         for (int i = 0; i < val.length -1; i++) {
             for(int j = 0; j < val.length - i - 1; j++) {
                 if(val[j + 1] < val[j] && (val[j + 1]> 0 && val[j]> 0) ) {
@@ -92,7 +87,7 @@ public class MyArrayImpl extends  MyBaseArrayImpl {
         }
 
     }
-    public void selectionsort() {
+    public void SelectionSort() {
         //System.out.println("Отсортировано с помощью \"Прямого выбора\" ");
         for (int i = 0; i < val.length; i++) {
             int pos = i;
@@ -146,7 +141,7 @@ public class MyArrayImpl extends  MyBaseArrayImpl {
         array[index1] = array[index2];
         array[index2]= tmp;
     }
-    public void Quicksort() {
+    public void QuickSort() {
         quickSort(val,0,val.length -1);
     }
 
